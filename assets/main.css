@@ -241,4 +241,45 @@ input[type="checkbox"], input[type="radio"] {
   height: 600px;
   max-width: 100%; }
 
+@-moz-keyframes flickerAnimation {
+  /* flame pulses */
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes flickerAnimation {
+  /* flame pulses */
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+@keyframes flickerAnimation {
+  /* flame pulses */
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+.code {
+  width: 700px;
+  height: 700px;
+  max-width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(code.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  -moz-animation: flickerAnimation 5s infinite;
+  -webkit-animation: flickerAnimation 5s infinite;
+  animation: flickerAnimation 5s infinite; }
+
 /*# sourceMappingURL=main.css.map */
