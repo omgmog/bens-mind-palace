@@ -82,9 +82,9 @@ $water_top: #3f9ba6;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 671px;
-    height: 761px;
     max-width: 100%;
+    width: 700px;
+    height: 700px;
 }
 
 @-moz-keyframes flickerAnimation { /* flame pulses */
@@ -104,8 +104,8 @@ $water_top: #3f9ba6;
 }
 
 .code {
-    width: 700px;
-    height: 700px;
+    width: 671px;
+    height: 761px;
     max-width: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
