@@ -193,6 +193,18 @@ input[type="checkbox"], input[type="radio"] {
   src: url("Amity-Jack.ttf.woff") format("woff"), url("Amity-Jack.ttf.svg#Amity-Jack") format("svg"), url("Amity-Jack.ttf.eot"), url("Amity-Jack.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
+.benweek {
+  position: fixed;
+  z-index: 1000;
+  right: -20%;
+  top: -20%;
+  transform: scale(0.3) rotate(240deg);
+  transition: all .5s ease; }
+  .benweek:hover {
+    transform: none;
+    right: 0;
+    top: 0; }
+
 .header {
   background-color: #fefefc; }
   .header h1 {
