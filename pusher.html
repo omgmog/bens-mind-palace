@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ben's Mind Palace</title>
+  <link rel="stylesheet" href="assets/main.css" />
+</head>
+
+<body>
+  <div class="outer-wrapper">
+    <div class="header">
+      <h1>
+        Ben's Mind Palace
+      </h1>
+    </div>
+    <div class="water">
+      <div class="swimmer"></div>
+      <div class="code"></div>
+      <div class="ben"></div>
+    </div>
+  </div>
+  <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+  <script>
+
+  (function () {
+    'use strict';
+
+    var pusher = new Pusher('087e104eb546157304a9', {
+      cluster: 'eu'
+    });
+    var button = pusher.subscribe('button');
+
+    button.bind('press', function(data) {
+      doSomethingNeat();
+    });
+    var ben = document.querySelector('.ben');
+    ben.style.display = 'none';
+
+    var doSomethingNeat = function() {
+      ben.style.display = 'block';
+
+      setTimeout(function() {
+        ben.style.display = 'none';
+      }, 1000);
+    }
+
+  }());
+  </script>
+</body>
+
+</html>
